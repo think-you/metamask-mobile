@@ -258,7 +258,7 @@ export const BrowserTab = (props) => {
         `${AppConstants.IPNS_DEFAULT_GATEWAY_URL}${sessionENSNames[key].hostname}/`;
     } else if (url.startsWith(AppConstants.SWARM_DEFAULT_GATEWAY_URL)) {
       replace = (key) =>
-        `${AppConstants.SWARM_GATEWAY_URL}${sessionENSNames[key].hash}/`;
+        `${AppConstants.SWARM_DEFAULT_GATEWAY_URL}${sessionENSNames[key].hash}/`;
     }
 
     if (replace) {
